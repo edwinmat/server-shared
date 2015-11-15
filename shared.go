@@ -24,6 +24,8 @@ type RxPacket struct {
 	Time       time.Time `json:"time"`
 	RawData    string    `json:"rawData"`
 	Data       string    `json:"data,omitempty"`
+        Rssi       *int      `json:"rssi,omitempty"`
+        Snr        *float64  `json:"lsnr,omitempty"`
 }
 
 type ConsumerQueues struct {
